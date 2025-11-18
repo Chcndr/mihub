@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"name": "Italia (bbox semplificato)"}, "geometry": {"type": "Polygon", "coordinates": [[[6.6, 36.6], [18.8, 36.6], [18.8, 47.2], [6.6, 47.2], [6.6, 36.6]]]}}]}

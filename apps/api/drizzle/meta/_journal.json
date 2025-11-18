@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1762450959827,
+      "tag": "0000_faulty_scorpion",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1762451046286,
+      "tag": "0001_late_spirit",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1762456029357,
+      "tag": "0002_previous_silver_sable",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1762472992107,
+      "tag": "0003_wild_krista_starr",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1762664759706,
+      "tag": "0004_slimy_vanisher",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1762740595592,
+      "tag": "0005_sturdy_mister_sinister",
+      "breakpoints": true
+    }
+  ]
+}

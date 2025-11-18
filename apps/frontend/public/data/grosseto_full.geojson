@@ -1,0 +1,2775 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "area",
+        "name": "Mercato Esperanto",
+        "type": "mercato",
+        "description": "Mercato Settimanale - Grosseto",
+        "fill_color": "#4caf50",
+        "stroke_color": "#2e7d32",
+        "fill_opacity": 0.15,
+        "stroke_width": 3,
+        "tipo": "Settimanale",
+        "orario": "Giovedì 07:00-14:00",
+        "total_posteggi": 180
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.111974,
+              42.759064
+            ],
+            [
+              11.11178,
+              42.758906
+            ],
+            [
+              11.1145,
+              42.757606
+            ],
+            [
+              11.116667,
+              42.758835
+            ],
+            [
+              11.116362,
+              42.759229
+            ],
+            [
+              11.114709,
+              42.758552
+            ],
+            [
+              11.114983,
+              42.758268
+            ],
+            [
+              11.114452,
+              42.757823
+            ],
+            [
+              11.113663,
+              42.758378
+            ],
+            [
+              11.113529,
+              42.758355
+            ],
+            [
+              11.111974,
+              42.759064
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112053990364076,
+          42.75892858256988
+        ]
+      },
+      "properties": {
+        "number": 1,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.111970841884615,
+          42.75888326460146
+        ]
+      },
+      "properties": {
+        "number": 2,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112137138843538,
+          42.758904938416585
+        ]
+      },
+      "properties": {
+        "number": 3,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11207813024521,
+          42.75883597625127
+        ]
+      },
+      "properties": {
+        "number": 4,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11222565174103,
+          42.75885962043088
+        ]
+      },
+      "properties": {
+        "number": 5,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112180054187776,
+          42.758798539615086
+        ]
+      },
+      "properties": {
+        "number": 6,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11235707998276,
+          42.758812332062625
+        ]
+      },
+      "properties": {
+        "number": 7,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112338304519655,
+          42.75872366627488
+        ]
+      },
+      "properties": {
+        "number": 8,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112448275089266,
+          42.75877489541217
+        ]
+      },
+      "properties": {
+        "number": 9,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112440228462221,
+          42.75870002204339
+        ]
+      },
+      "properties": {
+        "number": 10,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112528741359712,
+          42.75874336979422
+        ]
+      },
+      "properties": {
+        "number": 11,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112523376941683,
+          42.758666526033345
+        ]
+      },
+      "properties": {
+        "number": 12,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112662851810457,
+          42.758688199924265
+        ]
+      },
+      "properties": {
+        "number": 13,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112617254257204,
+          42.75861332645073
+        ]
+      },
+      "properties": {
+        "number": 14,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112743318080904,
+          42.75865273355336
+        ]
+      },
+      "properties": {
+        "number": 15,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112705767154695,
+          42.758583771107325
+        ]
+      },
+      "properties": {
+        "number": 16,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11282914876938,
+          42.75862317822873
+        ]
+      },
+      "properties": {
+        "number": 17,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112794280052187,
+          42.75854633431878
+        ]
+      },
+      "properties": {
+        "number": 18,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112880110740663,
+          42.75851283822563
+        ]
+      },
+      "properties": {
+        "number": 19,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113043725490572,
+          42.758528601095236
+        ]
+      },
+      "properties": {
+        "number": 20,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113006174564363,
+          42.758455697789664
+        ]
+      },
+      "properties": {
+        "number": 21,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113132238388063,
+          42.75847540139423
+        ]
+      },
+      "properties": {
+        "number": 22,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113073229789734,
+          42.75842023128566
+        ]
+      },
+      "properties": {
+        "number": 23,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113169789314272,
+          42.758378853672006
+        ]
+      },
+      "properties": {
+        "number": 24,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113258302211763,
+          42.758432053455934
+        ]
+      },
+      "properties": {
+        "number": 25,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113258302211763,
+          42.758343387124036
+        ]
+      },
+      "properties": {
+        "number": 26,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113336086273193,
+          42.75839855730103
+        ]
+      },
+      "properties": {
+        "number": 27,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113338768482208,
+          42.75831580201713
+        ]
+      },
+      "properties": {
+        "number": 28,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113435328006746,
+          42.75835520930897
+        ]
+      },
+      "properties": {
+        "number": 29,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113429963588716,
+          42.75827836506666
+        ]
+      },
+      "properties": {
+        "number": 30,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113566756248476,
+          42.75830595019023
+        ]
+      },
+      "properties": {
+        "number": 31,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113518476486208,
+          42.758225165150805
+        ]
+      },
+      "properties": {
+        "number": 32,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113652586936952,
+          42.75826851323385
+        ]
+      },
+      "properties": {
+        "number": 33,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113609671592714,
+          42.75820349109793
+        ]
+      },
+      "properties": {
+        "number": 34,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113741099834444,
+          42.75824289846116
+        ]
+      },
+      "properties": {
+        "number": 35,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113692820072176,
+          42.75816408370961
+        ]
+      },
+      "properties": {
+        "number": 36,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113869845867159,
+          42.75817984666794
+        ]
+      },
+      "properties": {
+        "number": 37,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11377328634262,
+          42.75812467629623
+        ]
+      },
+      "properties": {
+        "number": 38,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11395299434662,
+          42.75813649852289
+        ]
+      },
+      "properties": {
+        "number": 39,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113856434822083,
+          42.75809315034747
+        ]
+      },
+      "properties": {
+        "number": 40,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114041507244112,
+          42.75808132811257
+        ]
+      },
+      "properties": {
+        "number": 41,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114690601825714,
+          42.7580103946557
+        ]
+      },
+      "properties": {
+        "number": 43,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114754974842073,
+          42.758053742888976
+        ]
+      },
+      "properties": {
+        "number": 44,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114819347858429,
+          42.758104972580156
+        ]
+      },
+      "properties": {
+        "number": 45,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114894449710848,
+          42.758156202228925
+        ]
+      },
+      "properties": {
+        "number": 46,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114964187145235,
+          42.75821728367791
+        ]
+      },
+      "properties": {
+        "number": 47,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115007102489473,
+          42.75829806872761
+        ]
+      },
+      "properties": {
+        "number": 48,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114921271800997,
+          42.75860150431506
+        ]
+      },
+      "properties": {
+        "number": 49,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11495614051819,
+          42.7585226900196
+        ]
+      },
+      "properties": {
+        "number": 50,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114993691444397,
+          42.758611356094946
+        ]
+      },
+      "properties": {
+        "number": 51,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115058064460756,
+          42.75856603789452
+        ]
+      },
+      "properties": {
+        "number": 52,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115084886550903,
+          42.758682288863845
+        ]
+      },
+      "properties": {
+        "number": 53,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115130484104158,
+          42.758611356094946
+        ]
+      },
+      "properties": {
+        "number": 54,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115173399448397,
+          42.75872957733136
+        ]
+      },
+      "properties": {
+        "number": 55,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115208268165588,
+          42.75865076319882
+        ]
+      },
+      "properties": {
+        "number": 56,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115245819091797,
+          42.75875322155155
+        ]
+      },
+      "properties": {
+        "number": 57,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115304827690126,
+          42.75870002204339
+        ]
+      },
+      "properties": {
+        "number": 58,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11532896757126,
+          42.75878277681412
+        ]
+      },
+      "properties": {
+        "number": 59,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115398705005648,
+          42.758735488387245
+        ]
+      },
+      "properties": {
+        "number": 60,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115420162677767,
+          42.75882612450709
+        ]
+      },
+      "properties": {
+        "number": 61,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115487217903139,
+          42.75877489541217
+        ]
+      },
+      "properties": {
+        "number": 62,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115497946739199,
+          42.75887735355967
+        ]
+      },
+      "properties": {
+        "number": 63,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115565001964569,
+          42.758808391363644
+        ]
+      },
+      "properties": {
+        "number": 64,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11559182405472,
+          42.758918730840435
+        ]
+      },
+      "properties": {
+        "number": 65,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115642786026001,
+          42.758843857645495
+        ]
+      },
+      "properties": {
+        "number": 66,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115669608116152,
+          42.7589541970591
+        ]
+      },
+      "properties": {
+        "number": 67,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115758121013643,
+          42.75890296807005
+        ]
+      },
+      "properties": {
+        "number": 68,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115736663341522,
+          42.75899951497564
+        ]
+      },
+      "properties": {
+        "number": 69,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115953922271729,
+          42.75899163360124
+        ]
+      },
+      "properties": {
+        "number": 70,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115846633911135,
+          42.75901921840729
+        ]
+      },
+      "properties": {
+        "number": 71,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11606389284134,
+          42.75902709977818
+        ]
+      },
+      "properties": {
+        "number": 72,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116018295288088,
+          42.75909212104986
+        ]
+      },
+      "properties": {
+        "number": 73,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116138994693758,
+          42.759066506617636
+        ]
+      },
+      "properties": {
+        "number": 74,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116112172603609,
+          42.75914137954356
+        ]
+      },
+      "properties": {
+        "number": 75,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113577485084535,
+          42.75800842530377
+        ]
+      },
+      "properties": {
+        "number": 76,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115632057189943,
+          42.758776863716704
+        ]
+      },
+      "properties": {
+        "number": 77,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.111992299556734,
+          42.75876307126128
+        ]
+      },
+      "properties": {
+        "number": 78,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115709841251375,
+          42.75883203350773
+        ]
+      },
+      "properties": {
+        "number": 79,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112740635871889,
+          42.75835953054587
+        ]
+      },
+      "properties": {
+        "number": 93,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116439402103426,
+          42.7590550691654
+        ]
+      },
+      "properties": {
+        "number": 97,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116291880607607,
+          42.7588284794544
+        ]
+      },
+      "properties": {
+        "number": 98,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116082668304443,
+          42.758739813689765
+        ]
+      },
+      "properties": {
+        "number": 99,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116023659706117,
+          42.75879695386375
+        ]
+      },
+      "properties": {
+        "number": 100,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116144359111788,
+          42.758875767810345
+        ]
+      },
+      "properties": {
+        "number": 101,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116254329681396,
+          42.75890138232139
+        ]
+      },
+      "properties": {
+        "number": 102,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116501092910768,
+          42.75891714509218
+        ]
+      },
+      "properties": {
+        "number": 103,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114052236080171,
+          42.757955608736914
+        ]
+      },
+      "properties": {
+        "number": 104,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114140748977663,
+          42.757884675136104
+        ]
+      },
+      "properties": {
+        "number": 105,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11295521259308,
+          42.75856248177989
+        ]
+      },
+      "properties": {
+        "number": 106,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116324067115785,
+          42.759187081919336
+        ]
+      },
+      "properties": {
+        "number": 110,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114261448383333,
+          42.75786694172323
+        ]
+      },
+      "properties": {
+        "number": 111,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116358935832979,
+          42.75909447598708
+        ]
+      },
+      "properties": {
+        "number": 113,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116141676902773,
+          42.75899398547319
+        ]
+      },
+      "properties": {
+        "number": 114,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116211414337158,
+          42.758976252377785
+        ]
+      },
+      "properties": {
+        "number": 115,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116053164005281,
+          42.758944726862325
+        ]
+      },
+      "properties": {
+        "number": 116,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115956604480743,
+          42.75891911236916
+        ]
+      },
+      "properties": {
+        "number": 118,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115825176239014,
+          42.758887585801595
+        ]
+      },
+      "properties": {
+        "number": 120,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11590027809143,
+          42.75882059396615
+        ]
+      },
+      "properties": {
+        "number": 121,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115798354148867,
+          42.75878118697028
+        ]
+      },
+      "properties": {
+        "number": 122,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115720570087435,
+          42.758716165372356
+        ]
+      },
+      "properties": {
+        "number": 123,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115562319755554,
+          42.75872919056716
+        ]
+      },
+      "properties": {
+        "number": 112,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115484535694124,
+          42.75869372421969
+        ]
+      },
+      "properties": {
+        "number": 124,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115398705005648,
+          42.75865628749758
+        ]
+      },
+      "properties": {
+        "number": 125,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11529141664505,
+          42.75862082110841
+        ]
+      },
+      "properties": {
+        "number": 126,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115200221538545,
+          42.75857550291488
+        ]
+      },
+      "properties": {
+        "number": 127,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11502856016159,
+          42.75848486642846
+        ]
+      },
+      "properties": {
+        "number": 130,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115138530731203,
+          42.75853609576314
+        ]
+      },
+      "properties": {
+        "number": 131,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115025877952577,
+          42.75840408162228
+        ]
+      },
+      "properties": {
+        "number": 132,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115162670612335,
+          42.75847501462845
+        ]
+      },
+      "properties": {
+        "number": 133,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115117073059082,
+          42.758380437268805
+        ]
+      },
+      "properties": {
+        "number": 134,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115235090255739,
+          42.758429696328314
+        ]
+      },
+      "properties": {
+        "number": 135,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115186810493471,
+          42.75831344488508
+        ]
+      },
+      "properties": {
+        "number": 136,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115283370018007,
+          42.75836073363406
+        ]
+      },
+      "properties": {
+        "number": 137,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115371882915499,
+          42.75832526707571
+        ]
+      },
+      "properties": {
+        "number": 138,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115267276763918,
+          42.75826418573319
+        ]
+      },
+      "properties": {
+        "number": 139,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115162670612335,
+          42.75816960805175
+        ]
+      },
+      "properties": {
+        "number": 140,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115138530731203,
+          42.758102615440094
+        ]
+      },
+      "properties": {
+        "number": 141,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.115079522132874,
+          42.758023800510074
+        ]
+      },
+      "properties": {
+        "number": 142,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114999055862429,
+          42.7579824226317
+        ]
+      },
+      "properties": {
+        "number": 143,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114915907382967,
+          42.757948926233716
+        ]
+      },
+      "properties": {
+        "number": 144,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11482471227646,
+          42.7578779926253
+        ]
+      },
+      "properties": {
+        "number": 145,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114712059497835,
+          42.75783070350791
+        ]
+      },
+      "properties": {
+        "number": 146,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114642322063446,
+          42.757797207027906
+        ]
+      },
+      "properties": {
+        "number": 147,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11455649137497,
+          42.757773562442914
+        ]
+      },
+      "properties": {
+        "number": 148,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114449203014376,
+          42.75776371052983
+        ]
+      },
+      "properties": {
+        "number": 149,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114315092563631,
+          42.75777750320769
+        ]
+      },
+      "properties": {
+        "number": 150,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11422657966614,
+          42.75779326626437
+        ]
+      },
+      "properties": {
+        "number": 151,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114127337932588,
+          42.7578129700796
+        ]
+      },
+      "properties": {
+        "number": 152,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114012002944948,
+          42.75784843693117
+        ]
+      },
+      "properties": {
+        "number": 153,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11389935016632,
+          42.75798045225586
+        ]
+      },
+      "properties": {
+        "number": 154,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113808155059814,
+          42.758010007887016
+        ]
+      },
+      "properties": {
+        "number": 155,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11370086669922,
+          42.758065178360816
+        ]
+      },
+      "properties": {
+        "number": 156,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113617718219759,
+          42.758106556183954
+        ]
+      },
+      "properties": {
+        "number": 157,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113537251949312,
+          42.75814202286747
+        ]
+      },
+      "properties": {
+        "number": 158,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11344337463379,
+          42.75818931174729
+        ]
+      },
+      "properties": {
+        "number": 159,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11336022615433,
+          42.7582326598554
+        ]
+      },
+      "properties": {
+        "number": 160,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113277077674867,
+          42.75825236353088
+        ]
+      },
+      "properties": {
+        "number": 161,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113180518150331,
+          42.758301622692215
+        ]
+      },
+      "properties": {
+        "number": 162,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1131027340889,
+          42.758337089264074
+        ]
+      },
+      "properties": {
+        "number": 163,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112995445728304,
+          42.75837846690562
+        ]
+      },
+      "properties": {
+        "number": 164,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112920343875887,
+          42.75841984451955
+        ]
+      },
+      "properties": {
+        "number": 165,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112837195396425,
+          42.758441518496774
+        ]
+      },
+      "properties": {
+        "number": 166,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112746000289919,
+          42.75847698498859
+        ]
+      },
+      "properties": {
+        "number": 167,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112657487392427,
+          42.7585183625367
+        ]
+      },
+      "properties": {
+        "number": 168,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112552881240845,
+          42.758553828984546
+        ]
+      },
+      "properties": {
+        "number": 169,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112442910671236,
+          42.75860702861822
+        ]
+      },
+      "properties": {
+        "number": 170,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11235707998276,
+          42.75863658395054
+        ]
+      },
+      "properties": {
+        "number": 171,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112263202667238,
+          42.75867599103836
+        ]
+      },
+      "properties": {
+        "number": 172,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112196147441864,
+          42.75871342774856
+        ]
+      },
+      "properties": {
+        "number": 173,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.112086176872255,
+          42.75876268654334
+        ]
+      },
+      "properties": {
+        "number": 174,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.111890375614166,
+          42.75883361913902
+        ]
+      },
+      "properties": {
+        "number": 175,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.113462150096893,
+          42.75809079320697
+        ]
+      },
+      "properties": {
+        "number": 176,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116187274456026,
+          42.75880209355096
+        ]
+      },
+      "properties": {
+        "number": 177,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116235554218294,
+          42.75905626814798
+        ]
+      },
+      "properties": {
+        "number": 178,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1162006855011,
+          42.759160696168586
+        ]
+      },
+      "properties": {
+        "number": 179,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116423308849336,
+          42.75887303019363
+        ]
+      },
+      "properties": {
+        "number": 182,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.116318702697756,
+          42.75897351067342
+        ]
+      },
+      "properties": {
+        "number": 183,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.114655733108522,
+          42.75794104165655
+        ]
+      },
+      "properties": {
+        "number": 42,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11455112695694,
+          42.75787798955617
+        ]
+      },
+      "properties": {
+        "number": 185,
+        "orientation": 0,
+        "kind": "slot",
+        "status": "free",
+        "dimensions": "3m Ã— 6m"
+      }
+    }
+  ]
+}

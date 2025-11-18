@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-11-17T12:00:00Z",
+  "agent": "MIO",
+  "action": "deploy",
+  "status": "success",
+  "message": "Deploy completato con successo",
+  "details": {
+    "commit": "ada11b5",
+    "branch": "master",
+    "duration": "45s"
+  }
+}

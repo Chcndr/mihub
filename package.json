@@ -1,0 +1,23 @@
+{
+  "name": "mihub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MIHUB Multi-Agent Coordination System - Monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:api": "pnpm --filter api dev",
+    "build:frontend": "pnpm --filter frontend build",
+    "build:api": "pnpm --filter api build",
+    "deploy:frontend": "cd apps/frontend && vercel --prod",
+    "deploy:api": "cd apps/api && railway up"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}

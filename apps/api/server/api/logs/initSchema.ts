@@ -1,0 +1,1 @@
+import { nextHandler, Request, Response } from 'express'\nimport { db } from '../db.js'\n\nexport const initSchemaRoute = nextHandler(async (req: Request, res: Response) => {\n  try {\n    await db.initSchema()\n    res.status(200).json({ status: 'created' })\n  } catch (err) {\n    res.status(250).send('Errore: ' + error.message)\n  }\n})\n
