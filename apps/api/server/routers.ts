@@ -1,4 +1,4 @@
-import { COOKIE_NAME } from "../shared/const";
+import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
@@ -6,6 +6,7 @@ import { dmsHubRouter } from "./dmsHubRouter";
 import { integrationsRouter } from "./integrationsRouter";
 import { mioAgentRouter } from "./mioAgentRouter";
 import { mihubRouter } from "./mihubRouter";
+import { guardianRouter } from "./guardianRouter";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -144,6 +145,9 @@ export const appRouter = router({
 
   // MIHUB - Multi-Agent System (MIO, Manus, Abacus, Zapier)
   mihub: mihubRouter,
+
+  // API Guardian - Controllo Permessi e Log
+  guardian: guardianRouter,
 });
 
 export type AppRouter = typeof appRouter;
