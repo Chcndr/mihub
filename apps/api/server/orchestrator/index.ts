@@ -42,7 +42,7 @@ export interface OrchestratorResponse {
   message: string;
   agentsUsed: AgentId[];
   conversationId: string;
-  timestamp: Date;
+  timestamp: string; // ISO string
   error?: string;
 }
 
@@ -145,7 +145,7 @@ export async function orchestrate(request: OrchestratorRequest): Promise<Orchest
       message: finalResponse,
       agentsUsed: agentsToUse,
       conversationId,
-      timestamp: new Date()
+      timestamp: new Date().toISOString()
     };
   } catch (error) {
     console.error('[Orchestrator] Fatal error:', error);
@@ -167,7 +167,7 @@ export async function orchestrate(request: OrchestratorRequest): Promise<Orchest
       message: 'Si è verificato un errore durante l\'elaborazione della richiesta',
       agentsUsed: [],
       conversationId,
-      timestamp: new Date(),
+      timestamp: new Date().toISOString(),
       error: error instanceof Error ? error.message : 'Unknown error'
     };
   }

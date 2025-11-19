@@ -404,6 +404,16 @@ export const mihubRouter = router({
       }).optional(),
     }))
     .mutation(async ({ input }) => {
+      // DEBUG: Log input completo
+      console.log("[mihubRouter] Orchestrator input:", JSON.stringify(input, null, 2));
+      console.log("[mihubRouter] Input fields:", {
+        message: typeof input.message,
+        userId: typeof input.userId,
+        targetAgent: input.targetAgent,
+        mode: input.mode,
+        context: input.context,
+      });
+
       try {
         const response = await orchestrate({
           message: input.message,
@@ -413,9 +423,13 @@ export const mihubRouter = router({
           context: input.context,
         });
 
+        // DEBUG: Log response
+        console.log("[mihubRouter] Orchestrator response:", JSON.stringify(response, null, 2));
+
         return response;
       } catch (error) {
         console.error("[mihubRouter] Orchestrator error:", error);
+        console.error("[mihubRouter] Error stack:", error instanceof Error ? error.stack : 'No stack');
         throw new Error(error instanceof Error ? error.message : "Orchestrator failed");
       }
     }),
