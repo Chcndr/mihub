@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mihub-api:
+    build:
+      context: ../..
+      dockerfile: apps/api/Dockerfile
+    container_name: mihub-api
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DATABASE_URL=${DATABASE_URL}
+      - FRONTEND_URL=${FRONTEND_URL}
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - mihub-network
+
+networks:
+  mihub-network:
+    driver: bridge

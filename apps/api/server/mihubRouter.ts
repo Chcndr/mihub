@@ -16,6 +16,7 @@ import {
 } from "../drizzle/schema";
 import { eq, and, desc } from "drizzle-orm";
 import { emitEvent } from "./eventBus";
+import { orchestrate, getAgentConversation, getAllConversations } from "./orchestrator/index";
 
 export const mihubRouter = router({
   // ============================================================================
@@ -385,5 +386,72 @@ export const mihubRouter = router({
         ...m,
         value: JSON.parse(m.value),
       }));
+    }),
+
+  // ============================================================================
+  // ORCHESTRATOR (Multi-Agent Coordination)
+  // ============================================================================
+
+  orchestrator: publicProcedure
+    .input(z.object({
+      message: z.string(),
+      userId: z.string(),
+      targetAgent: z.enum(["mio_dev", "abacus", "zapier", "manus_worker"]).optional(),
+      mode: z.enum(["auto", "manual"]),
+      context: z.object({
+        dashboardTab: z.string().optional(),
+        previousMessages: z.array(z.any()).optional(),
+      }).optional(),
+    }))
+    .mutation(async ({ input }) => {
+      try {
+        const response = await orchestrate({
+          message: input.message,
+          userId: input.userId,
+          targetAgent: input.targetAgent,
+          mode: input.mode,
+          context: input.context,
+        });
+
+        return response;
+      } catch (error) {
+        console.error("[mihubRouter] Orchestrator error:", error);
+        throw new Error(error instanceof Error ? error.message : "Orchestrator failed");
+      }
+    }),
+
+  getConversation: publicProcedure
+    .input(z.object({
+      userId: z.string(),
+      agentId: z.enum(["mio_dev", "abacus", "zapier", "manus_worker"]),
+      limit: z.number().default(50),
+    }))
+    .query(async ({ input }) => {
+      try {
+        const messages = await getAgentConversation(input.userId, input.agentId, input.limit);
+        return messages;
+      } catch (error) {
+        console.error("[mihubRouter] Get conversation error:", error);
+        return [];
+      }
+    }),
+
+  getAllConversations: publicProcedure
+    .input(z.object({
+      userId: z.string(),
+    }))
+    .query(async ({ input }) => {
+      try {
+        const conversations = await getAllConversations(input.userId);
+        return conversations;
+      } catch (error) {
+        console.error("[mihubRouter] Get all conversations error:", error);
+        return {
+          mio_dev: [],
+          abacus: [],
+          zapier: [],
+          manus_worker: [],
+        };
+      }
     }),
 });

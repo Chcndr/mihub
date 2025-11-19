@@ -4,6 +4,7 @@
 import { ENV } from './_core/env';
 
 type StorageConfig = { baseUrl: string; apiKey: string };
+type HeadersInit = Record<string, string>;
 
 function getStorageConfig(): StorageConfig {
   const baseUrl = ENV.forgeApiUrl;
@@ -38,7 +39,8 @@ async function buildDownloadUrl(
     method: "GET",
     headers: buildAuthHeaders(apiKey),
   });
-  return (await response.json()).url;
+  const data = await response.json() as { url: string };
+  return data.url;
 }
 
 function ensureTrailingSlash(value: string): string {
@@ -88,7 +90,8 @@ export async function storagePut(
       `Storage upload failed (${response.status} ${response.statusText}): ${message}`
     );
   }
-  const url = (await response.json()).url;
+  const data = await response.json() as { url: string };
+  const url = data.url;
   return { key, url };
 }
 
