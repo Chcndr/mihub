@@ -6,6 +6,13 @@ export { createContext } from "./context";
 
 const t = initTRPC.context<TrpcContext>().create({
   transformer: superjson,
+  errorFormatter({ shape, error }) {
+    // DEBUG: Log Zod validation errors
+    if (error.code === 'BAD_REQUEST' && error.cause?.name === 'ZodError') {
+      console.error('[tRPC] Zod validation error:', JSON.stringify(error.cause.issues, null, 2));
+    }
+    return shape;
+  },
 });
 
 export const router = t.router;

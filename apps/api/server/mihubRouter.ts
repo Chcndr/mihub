@@ -430,6 +430,12 @@ export const mihubRouter = router({
       } catch (error) {
         console.error("[mihubRouter] Orchestrator error:", error);
         console.error("[mihubRouter] Error stack:", error instanceof Error ? error.stack : 'No stack');
+        
+        // DEBUG: Log Zod validation errors
+        if (error && typeof error === 'object' && 'issues' in error) {
+          console.error("[mihubRouter] Zod validation issues:", JSON.stringify(error.issues, null, 2));
+        }
+        
         throw new Error(error instanceof Error ? error.message : "Orchestrator failed");
       }
     }),
