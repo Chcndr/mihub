@@ -39,12 +39,18 @@ export async function callAgent(
       throw new Error('Rate limit exceeded for agent');
     }
 
-    // 2. Log inizio chiamata
+    // 2. Check if OpenAI API key is available
+    if (!process.env.OPENAI_API_KEY) {
+      console.warn(`[Agent ${agentId}] OPENAI_API_KEY not found, using mock response`);
+      return getMockResponse(agentId, prompt);
+    }
+
+    // 3. Log inizio chiamata
     console.log(`[Agent ${agentId}] Calling OpenAI API with model ${prompt.model}`);
     
     const startTime = Date.now();
 
-    // 3. Chiama OpenAI API
+    // 4. Chiama OpenAI API
     const completion = await openai.chat.completions.create({
       model: prompt.model,
       messages: prompt.messages as any,
@@ -54,7 +60,7 @@ export async function callAgent(
 
     const responseTime = Date.now() - startTime;
 
-    // 4. Estrai risposta
+    // 5. Estrai risposta
     const content = completion.choices[0]?.message?.content || '';
     const usage = completion.usage;
 
@@ -214,4 +220,116 @@ export async function callAgentWithRetry(
   }
 
   throw lastError || new Error('Failed after retries');
+}
+
+/**
+ * Mock responses per test senza OPENAI_API_KEY
+ */
+function getMockResponse(agentId: AgentId, prompt: AgentPrompt): AgentCallResponse {
+  const userMessage = prompt.messages[prompt.messages.length - 1]?.content || '';
+  
+  const mockResponses: Record<AgentId, string> = {
+    mio_dev: `🔧 **MIO Dev (Mock Mode)**
+
+Ho analizzato la tua richiesta: "${userMessage.substring(0, 100)}..."
+
+### Azioni Pianificate:
+1. ✅ Verifica repository GitHub
+2. ✅ Analisi file modificati
+3. ✅ Controllo build status
+
+### Risultato:
+- **Repository:** Chcndr/mihub
+- **Branch:** master
+- **Ultimo commit:** 9791f84
+- **Status:** ✅ Build successful
+
+*Nota: Questa è una risposta mock. Configura OPENAI_API_KEY per risposte reali.*`,
+
+    abacus: `📊 **Abacus (Mock Mode)**
+
+Analisi richiesta: "${userMessage.substring(0, 100)}..."
+
+### Metriche Sistema:
+| Metrica | Valore | Trend |
+|---------|--------|-------|
+| Richieste totali | 1,234 | ↗️ +12% |
+| Errori | 5 | ↘️ -3% |
+| Latenza media | 245ms | ↗️ +8% |
+| Uptime | 99.8% | → |
+
+### Top 5 Endpoint:
+1. /api/trpc/mihub.orchestrator (45%)
+2. /api/trpc/guardian.logs (23%)
+3. /api/trpc/analytics.overview (15%)
+4. /api/trpc/dmsHub.markets (10%)
+5. /api/trpc/mioAgent.getLogs (7%)
+
+*Nota: Dati mock. Configura OPENAI_API_KEY per analisi reali.*`,
+
+    zapier: `⚡ **Zapier (Mock Mode)**
+
+Richiesta automazione: "${userMessage.substring(0, 100)}..."
+
+### Workflow Suggerito:
+1. **Trigger:** Nuovo messaggio in chat
+2. **Azione 1:** Analizza contenuto
+3. **Azione 2:** Notifica su Slack
+4. **Azione 3:** Salva in database
+
+### Integrazioni Disponibili:
+- ✅ Slack
+- ✅ Telegram
+- ✅ Email (SendGrid)
+- ✅ Webhook custom
+
+### Prossimi Step:
+- Conferma workflow
+- Configura credenziali
+- Test automazione
+
+*Nota: Mock mode. Configura OPENAI_API_KEY per automazioni reali.*`,
+
+    manus_worker: `🎫 **Manus Worker (Mock Mode)**
+
+Richiesta task: "${userMessage.substring(0, 100)}..."
+
+### Ticket Creato:
+- **ID:** TASK-${Date.now().toString().slice(-6)}
+- **Tipo:** Operativo
+- **Priorità:** Media
+- **Assegnato a:** Team operativo
+- **Status:** 🟡 In attesa
+
+### Dettagli:
+- **Descrizione:** ${userMessage.substring(0, 200)}
+- **Creato:** ${new Date().toLocaleString('it-IT')}
+- **SLA:** 24 ore
+
+### Azioni:
+- [ ] Analisi richiesta
+- [ ] Pianificazione intervento
+- [ ] Esecuzione
+- [ ] Verifica
+
+*Nota: Ticket mock. Configura OPENAI_API_KEY per gestione reale.*`
+  };
+
+  const content = mockResponses[agentId] || `Mock response from ${agentId}`;
+
+  console.log(`[Agent ${agentId}] Mock response generated (${content.length} chars)`);
+
+  return {
+    content,
+    metadata: {
+      model: 'mock',
+      responseTime: 100,
+      mock: true
+    },
+    usage: {
+      promptTokens: 0,
+      completionTokens: 0,
+      totalTokens: 0
+    }
+  };
 }
