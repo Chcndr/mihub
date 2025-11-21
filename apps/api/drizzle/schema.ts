@@ -1,4 +1,4 @@
-import { pgTable, pgEnum, text, timestamp, varchar, integer, boolean, serial, json, index } from "drizzle-orm/pg-core";
+import { pgTable, pgEnum, text, timestamp, varchar, integer, boolean, serial, json, jsonb, real, index } from "drizzle-orm/pg-core";
 
 // Enum definitions
 export const roleEnum = pgEnum("role", ["user", "admin"]);
@@ -329,6 +329,13 @@ export const stalls = pgTable("stalls", {
   status: varchar("status", { length: 50 }).default("free").notNull(), // free, reserved, occupied, booked, maintenance
   category: varchar("category", { length: 100 }), // alimentari, abbigliamento, artigianato, etc.
   notes: text("notes"),
+  // Campi GIS (Pepe GIS / Editor v3)
+  orientation: real("orientation"), // Angolo di rotazione in gradi
+  kind: varchar("kind", { length: 50 }), // Tipo piazzola (es. slot)
+  widthM: real("width_m"), // Larghezza in metri
+  depthM: real("depth_m"), // Profondità in metri
+  rawGeojson: jsonb("raw_geojson"), // Feature GeoJSON completa dall'Editor v3
+  legacyId: varchar("legacy_id", { length: 255 }), // ID dal sistema legacy DMS (Heroku)
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
