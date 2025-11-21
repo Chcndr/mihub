@@ -1,0 +1,72 @@
+{
+  "container": [
+    [42.75952865060401, 11.111688678391841],
+    [42.75952865060401, 11.116775209776497],
+    [42.757582387578495, 11.116775209776497],
+    [42.757582387578495, 11.111688678391841]
+  ],
+  "center": {
+    "lat": 42.75855551908925,
+    "lng": 11.114231944084169
+  },
+  "stalls_geojson": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [11.112024486064911, 42.7590056227281]
+        },
+        "properties": {
+          "number": "1",
+          "orientation": 122.8,
+          "kind": "slot",
+          "status": "free",
+          "dimensions": "4m × 7.6m"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [11.111976206302643, 42.75895049571956]
+        },
+        "properties": {
+          "number": "2",
+          "orientation": 122.8,
+          "kind": "slot",
+          "status": "free",
+          "dimensions": "4m × 7.6m"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [11.111927926540375, 42.75889536871102]
+        },
+        "properties": {
+          "number": "3",
+          "orientation": 122.8,
+          "kind": "slot",
+          "status": "free",
+          "dimensions": "4m × 7.6m"
+        }
+      }
+    ]
+  },
+  "markers_geojson": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "areas_geojson": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "gcp": [],
+  "png": {
+    "url": "",
+    "metadata": {}
+  }
+}

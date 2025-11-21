@@ -4,6 +4,7 @@ import { createExpressMiddleware } from '@trpc/server/adapters/express';
 import { appRouter } from '../server/routers.js';
 import { createContext } from '../server/_core/trpc.js';
 import dotenv from 'dotenv';
+import gisRouter from '../server/gisRouter.js';
 
 // Load environment variables
 dotenv.config();
@@ -17,6 +18,9 @@ app.use(cors({
   credentials: true,
 }));
 
+// JSON body parser
+app.use(express.json());
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.json({ 
@@ -25,6 +29,9 @@ app.get('/health', (req, res) => {
     service: 'mihub-api'
   });
 });
+
+// GIS Router (REST endpoints for map data)
+app.use('/api/gis', gisRouter);
 
 // tRPC middleware
 app.use(
@@ -39,6 +46,7 @@ app.use(
 app.listen(PORT, () => {
   console.log(`🚀 MIHUB API Server running on port ${PORT}`);
   console.log(`📍 Health: http://localhost:${PORT}/health`);
+  console.log(`📍 GIS: http://localhost:${PORT}/api/gis/market-map`);
   console.log(`📍 tRPC: http://localhost:${PORT}/trpc`);
 });
 
