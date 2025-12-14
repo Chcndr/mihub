@@ -84,33 +84,26 @@ export async function orchestrate(request: OrchestratorRequest): Promise<Orchest
         // Costruisci prompt specifico per agente
         const prompt = await buildPrompt(agentId, message, userId, conversationId);
         
-        // 🔧 FIX: Salva messaggio di delega da MIO all'agente
-        const delegationMessage = prompt.messages[prompt.messages.length - 1]?.content || message;
-        await saveMessage({
-          conversationId,
-          sender: 'mio',
-          recipients: [agentId],
-          content: delegationMessage,
-          messageType: 'text',
-          metadata: { agentId, mode, delegated: true, timestamp: new Date().toISOString() }
-        });
-        
-        console.log(`[Orchestrator] Delegation message saved: mio → ${agentId}`);
-        
         // Chiama agente (OpenAI API + eventuali azioni)
         const response = await callAgent(agentId, prompt);
         
-        // 🔧 FIX: Salva risposta agente a MIO (non direttamente all'utente)
+        // Salva messaggio utente in DB
+        await saveMessage({
+          conversationId,
+          sender: 'user',
+          content: message,
+          messageType: 'text',
+          metadata: { agentId, mode }
+        });
+        
+        // Salva risposta agente in DB
         await saveMessage({
           conversationId,
           sender: agentId,
-          recipients: ['mio'],
           content: response.content,
           messageType: 'text',
-          metadata: { ...response.metadata, timestamp: new Date().toISOString() }
+          metadata: response.metadata
         });
-        
-        console.log(`[Orchestrator] Agent response saved: ${agentId} → mio`);
         
         agentResponses.push({
           agentId,
@@ -132,23 +125,6 @@ export async function orchestrate(request: OrchestratorRequest): Promise<Orchest
 
     // 3. Genera risposta finale per l'utente
     const finalResponse = await generateFinalResponse(message, agentResponses, mode);
-    
-    // 🔧 FIX: Salva risposta finale da MIO all'utente
-    await saveMessage({
-      conversationId,
-      sender: 'mio',
-      recipients: ['user'],
-      content: finalResponse,
-      messageType: 'text',
-      metadata: { 
-        agentsUsed: agentsToUse, 
-        mode, 
-        finalResponse: true,
-        timestamp: new Date().toISOString()
-      }
-    });
-    
-    console.log(`[Orchestrator] Final response saved: mio → user`);
 
     // 4. Log in API Guardian
     await logToGuardian({
