@@ -17,13 +17,64 @@ export async function analyzeMessage(message: string): Promise<AgentId[]> {
   const agents: AgentId[] = [];
 
   // ============================================================================
-  // MIO_DEV - GitHub connector e sviluppo
+  // PRIORITÀ ESPLICITA: Se il messaggio inizia con il nome di un agente
+  // ============================================================================
+  if (messageLower.startsWith('manus,') || messageLower.startsWith('manus ')) {
+    console.log('[Router] Explicit agent detected: manus_worker');
+    return ['manus_worker'];
+  }
+  if (messageLower.startsWith('gpt dev,') || messageLower.startsWith('gpt dev ') || messageLower.startsWith('gptdev,') || messageLower.startsWith('gptdev ')) {
+    console.log('[Router] Explicit agent detected: mio_dev');
+    return ['mio_dev'];
+  }
+  if (messageLower.startsWith('abacus,') || messageLower.startsWith('abacus ')) {
+    console.log('[Router] Explicit agent detected: abacus');
+    return ['abacus'];
+  }
+  if (messageLower.startsWith('zapier,') || messageLower.startsWith('zapier ')) {
+    console.log('[Router] Explicit agent detected: zapier');
+    return ['zapier'];
+  }
+
+  // ============================================================================
+  // MANUS_WORKER - Comandi server, SSH, PM2, operazioni sistema
+  // ============================================================================
+  const manusWorkerKeywords = [
+    'manus',
+    'server',
+    'ssh',
+    'pm2',
+    'restart',
+    'riavvia',
+    'esegui',
+    'execute',
+    'comando',
+    'command',
+    'deploy',  // Spostato da mio_dev a manus_worker
+    'git pull',
+    'pull',
+    'logs',
+    'stato',
+    'status',
+    'verifica',
+    'check',
+    'directory',
+    'file system',
+    'processo',
+    'process'
+  ];
+
+  if (manusWorkerKeywords.some(keyword => messageLower.includes(keyword))) {
+    agents.push('manus_worker');
+  }
+
+  // ============================================================================
+  // MIO_DEV - GitHub connector e sviluppo (CODE, non deploy)
   // ============================================================================
   const mioDevKeywords = [
     'github',
     'codice',
     'code',
-    'deploy',
     'commit',
     'repo',
     'repository',
@@ -116,34 +167,7 @@ export async function analyzeMessage(message: string): Promise<AgentId[]> {
     agents.push('zapier');
   }
 
-  // ============================================================================
-  // MANUS_WORKER - Ticket operativi umani
-  // ============================================================================
-  const manusWorkerKeywords = [
-    'ticket',
-    'task',
-    'operativo',
-    'operative',
-    'manuale',
-    'manual',
-    'umano',
-    'human',
-    'richiesta',
-    'request',
-    'help',
-    'aiuto',
-    'supporto',
-    'support',
-    'issue',
-    'problema',
-    'bug',
-    'segnalazione',
-    'report'
-  ];
 
-  if (manusWorkerKeywords.some(keyword => messageLower.includes(keyword))) {
-    agents.push('manus_worker');
-  }
 
   // ============================================================================
   // Default: se nessun agente specifico, usa mio_dev come coordinatore
