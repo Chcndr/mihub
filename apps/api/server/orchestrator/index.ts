@@ -84,26 +84,30 @@ export async function orchestrate(request: OrchestratorRequest): Promise<Orchest
         // Costruisci prompt specifico per agente
         const prompt = await buildPrompt(agentId, message, userId, conversationId);
         
+        // Salva messaggio di delega MIO → Agente
+        await saveMessage({
+          conversationId,
+          sender: 'mio',
+          content: prompt,
+          messageType: 'text',
+          recipients: [agentId],
+          metadata: { delegatedFrom: 'user', originalMessage: message }
+        });
+        console.log(`[Orchestrator] Delegation message saved: mio → ${agentId}`);
+        
         // Chiama agente (OpenAI API + eventuali azioni)
         const response = await callAgent(agentId, prompt);
         
-        // Salva messaggio utente in DB
-        await saveMessage({
-          conversationId,
-          sender: 'user',
-          content: message,
-          messageType: 'text',
-          metadata: { agentId, mode }
-        });
-        
-        // Salva risposta agente in DB
+        // Salva risposta Agente → MIO
         await saveMessage({
           conversationId,
           sender: agentId,
           content: response.content,
           messageType: 'text',
+          recipients: ['mio'],
           metadata: response.metadata
         });
+        console.log(`[Orchestrator] Agent response saved: ${agentId} → mio`);
         
         agentResponses.push({
           agentId,
